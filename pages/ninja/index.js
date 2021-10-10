@@ -39,7 +39,9 @@ export default function Ninjas({ ninjas, error }) {
             </a>
           </Link>
         ))}
+
       {error && <div>{error}</div>}
+      {(data === null || data.length === 0) && <div>No ninja is found</div>}
     </div>
   );
 }
