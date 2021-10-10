@@ -26,7 +26,7 @@ export default function Ninjas({ ninjas, error }) {
     if (search) {
       setData(ninjas.filter((ninja) => ninja.name.includes(search)));
     } else setData(ninjas);
-  }, [ninjas]);
+  });
 
   return (
     <div>
